@@ -1,0 +1,210 @@
+body {
+  background-color: #12161C;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Match Card */
+.match-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #1e2430;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #3c4556;
+  transition: background 0.3s;
+  margin-bottom: 10px;
+  width: 99%;
+}
+.match-card:hover {
+  background-color: #2d333f;
+  border: 1px solid #3c4556;
+}
+.match-title {
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: 600;
+}
+.match-time {
+  font-size: 0.875rem;
+  color: #ccc;
+  text-align: right;
+  min-width: 120px;
+}
+.watch-button {
+  background-color: #22c55e;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  margin-top: 0.25rem;
+  display: inline-block;
+}
+
+/* Sidebar */
+.sidebar {
+  padding: 16px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.poster-img {
+  margin-top: 16px;
+  border-radius: 12px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Match Cards in Sidebar */
+.et-card {
+  background: #2d333f;
+  padding: 24px 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 268px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  height: 160px;
+  border: 1px solid #3c4556;
+}
+.et-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #22c55e;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.et-time {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.et-date {
+  font-size: 16px;
+  color: #cbd5e1;
+}
+
+/* Poster Date */
+.poster-date {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(135deg, #2d333f, #3c4556);
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e2430;
+  color: #ccc;
+  padding: 30px 20px 15px;
+  border-top: 1px solid #3c4556;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: center;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-top {
+  margin-bottom: 16px;
+}
+.footer-logo {
+  height: 45px;
+  border-radius: 10px;
+}
+.footer-title {
+  color: #fff;
+  margin: 8px 0 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+.footer-text {
+  margin: 12px auto 0;
+  max-width: 600px;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-text strong {
+  color: #fff;
+}
+.footer-copy {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* Layout for Desktop */
+@media (min-width: 1024px) {
+  .main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .sidebar {
+    margin: 0;
+  }
+}
+
+/* ✅ Mobile Optimized CSS */
+@media (max-width: 640px) {
+  .match-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem;
+  }
+  .match-title {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  .match-time {
+    text-align: left;
+    font-size: 0.75rem;
+    margin-top: 4px;
+  }
+  .watch-button {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    margin-top: 6px;
+  }
+  .et-card {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+  .et-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+  .et-time {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .et-date {
+    font-size: 14px;
+  }
+  .poster-img {
+    height: auto;
+    object-fit: contain;
+  }
+  .sidebar {
+    max-width: 100%;
+    padding: 12px;
+  }
+  .footer-title {
+    font-size: 18px;
+  }
+  .footer-text {
+    font-size: 13px;
+  }
+}
