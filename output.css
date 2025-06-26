@@ -1,210 +1,290 @@
 body {
-  background-color: #12161C;
-  font-family: 'Segoe UI', sans-serif;
-}
+      font-family: "Titillium Web", sans-serif;
+      background: #262626;
+      margin: 0;
+      color: #fff;
+    }
+    .wrap {
+      padding: 17px;
+      max-width: 1300px;
+      margin: auto;
+      background: #111;
+    }
+    header {
+      background: #111;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
 
-/* Match Card */
-.match-card {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #1e2430;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  border: 1px solid #3c4556;
-  transition: background 0.3s;
-  margin-bottom: 10px;
-  width: 99%;
-}
-.match-card:hover {
-  background-color: #2d333f;
-  border: 1px solid #3c4556;
-}
-.match-title {
-  font-size: 1.125rem;
+    h1,
+p {
   color: #fff;
-  font-weight: 600;
+  margin-top: 0;
 }
-.match-time {
-  font-size: 0.875rem;
-  color: #ccc;
-  text-align: right;
-  min-width: 120px;
-}
-.watch-button {
-  background-color: #22c55e;
-  color: #fff;
-  font-size: 0.75rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  margin-top: 0.25rem;
-  display: inline-block;
+h1 {
+  font-size: x-large;
+  margin: 0;
+  font-size: 35px;
 }
 
-/* Sidebar */
-.sidebar {
-  padding: 16px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
-}
-.poster-img {
-  margin-top: 16px;
-  border-radius: 12px;
-  width: 100%;
-  object-fit: cover;
-}
+    header .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+       background: #111;
+    }
+    main.wrap {
+      background: #111;
+      margin: 100px auto 30px;
+      border-radius: 6px;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 1px solid #333;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    article {
+      flex: 1;
+      padding-right: 20px;
+    }
+    .league-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .league-btn {
+      background: #222;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #fff;
+      border: 1px solid #333;
+      font-size: 13px;
+          text-transform: uppercase;
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+    .league-btn.active,
+    .league-btn:hover {
+      background: #00cc99;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    .search-box {
+      margin-bottom: 25px;
+    }
+    .search-box input {
+      width: 50%;
+      padding: 16px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid #444;
+      background: #222;
+      color: #fff;
+      display: block;
+      margin: auto;
+    }
+    table {
+      width: 100%;
+      color: #e6e6e6;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+    .tbl tr {
+      border-bottom: 1px solid #333;
+      background: linear-gradient(to bottom, #121212, #000);
+      cursor: pointer;
+    }
+    .tbl tr:hover {
+      background: #1b1b1b;
+    }
+    .tbl td {
+      padding: 14px 10px;
+    }
+    a.title {
+      color: #ff7802;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .cmp {
+      font-size: 15px;
+      color: #ccc;
+    }
+    aside {
+      width: 300px;
+    }
 
-/* Match Cards in Sidebar */
-.et-card {
-  background: #2d333f;
-  padding: 24px 30px;
-  border-radius: 10px;
-  text-align: center;
-  width: 268px;
-  transition: all 0.3s ease;
-  margin-bottom: 10px;
-  height: 160px;
-  border: 1px solid #3c4556;
-}
-.et-title {
-  font-size: 15px;
-  font-weight: 600;
-  color: #22c55e;
-  margin-bottom: 12px;
-  letter-spacing: 1px;
-}
-.et-time {
-  font-size: 30px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-.et-date {
-  font-size: 16px;
-  color: #cbd5e1;
-}
+    .footer {background:#111;padding:30px;color:#ccc;text-align:center;border-top:1px solid #333;}
+.footer-title {color:#00cc99;font-size:22px;margin-bottom:5px;}
+.footer-line {width:60px;height:2px;background:#00cc99;margin:10px auto;}
+.footer-desc {font-size:15px;color:#aaa;margin-top:10px;}
+.footer-tagline {font-size:13px;color:#777;margin-top:5px;font-style:italic;}
+.footer-copy {font-size:14px;color:#555;margin-top:20px;}
 
-/* Poster Date */
-.poster-date {
-  margin-top: 10px;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  background: linear-gradient(135deg, #2d333f, #3c4556);
-  padding: 8px 12px;
-  border-radius: 8px;
-  display: inline-block;
-  width: 100%;
-}
-
-/* Footer */
-.footer {
-  background-color: #1e2430;
-  color: #ccc;
-  padding: 30px 20px 15px;
-  border-top: 1px solid #3c4556;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  text-align: center;
-}
-.footer-container {
-  max-width: 1200px;
-  margin: auto;
-}
-.footer-top {
-  margin-bottom: 16px;
-}
-.footer-logo {
-  height: 45px;
-  border-radius: 10px;
-}
-.footer-title {
-  color: #fff;
-  margin: 8px 0 0;
-  font-size: 22px;
-  font-weight: 600;
-}
-.footer-text {
-  margin: 12px auto 0;
-  max-width: 600px;
-  color: #bbb;
-  font-size: 14px;
-  line-height: 1.6;
-}
-.footer-text strong {
-  color: #fff;
-}
-.footer-copy {
-  margin-top: 20px;
-  font-size: 13px;
-  color: #777;
-}
-
-/* Layout for Desktop */
-@media (min-width: 1024px) {
-  .main-content {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 16px;
-    align-items: flex-start;
-  }
-  .sidebar {
-    margin: 0;
-  }
-}
-
-/* ✅ Mobile Optimized CSS */
-@media (max-width: 640px) {
-  .match-card {
+@media (max-width: 768px) {
+  header .wrap {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0.75rem;
+    text-align: center;
+    padding: 10px;
   }
-  .match-title {
-    font-size: 1rem;
-    margin-bottom: 6px;
+
+  .container {
+    flex-direction: column;
   }
-  .match-time {
-    text-align: left;
-    font-size: 0.75rem;
-    margin-top: 4px;
-  }
-  .watch-button {
-    font-size: 0.7rem;
-    padding: 4px 10px;
-    margin-top: 6px;
-  }
-  .et-card {
+
+  aside {
     width: 100%;
-    padding: 20px;
-    height: auto;
+    margin-top: 20px;
+    padding: 0 10px;
   }
-  .et-title {
-    font-size: 14px;
-    margin-bottom: 10px;
-    letter-spacing: 0.5px;
-  }
-  .et-time {
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
-  .et-date {
-    font-size: 14px;
-  }
-  .poster-img {
-    height: auto;
-    object-fit: contain;
-  }
-  .sidebar {
-    max-width: 100%;
+
+  .search-box input {
+    width: 95%;
     padding: 12px;
   }
-  .footer-title {
-    font-size: 18px;
+
+  .league-filters {
+    justify-content: center;
+    gap: 6px;
   }
-  .footer-text {
+
+  .league-btn {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  table.tbl {
+    font-size: 14px;
+  }
+
+  .tbl tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px;
+    background: #181818;
+  }
+
+  .tbl td {
+    padding: 5px 0;
+    display: block;
+    width: 100%;
+  }
+
+  .tbl td:nth-child(1) {
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  .tbl td:nth-child(2) {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .tbl td:nth-child(3) {
     font-size: 13px;
+    color: #aaa;
+  }
+
+  .tbl td:nth-child(4) .title {
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    color: #ff7802;
+  }
+
+  center,
+  center script,
+  script[src*="728"] {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tbl {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+  }
+
+  .tbl tr {
+    display: block;
+    background: #1d1d1d;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    margin: 10px auto;
+    width: 95%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .tbl tr:hover {
+    background: #222;
+    transform: scale(1.01);
+  }
+
+  .tbl td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+  }
+
+  .tbl td:last-child {
+    border-bottom: none;
+  }
+
+  .tbl td span.cmp {
+    font-size: 12px;
+    color: #aaa;
+    font-weight: 500;
+  }
+
+  .tbl td a.title {
+    font-size: 16px;
+    color: #ff7802;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .tbl td a.title:hover {
+    text-decoration: underline;
+  }
+
+  .tbl td:nth-child(1) {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 13px;
+    color: #ccc;
+  }
+
+  .tbl td:nth-child(2) {
+    font-size: 24px;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .tbl td:nth-child(3),
+  .tbl td:nth-child(4) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
